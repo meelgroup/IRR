@@ -1,0 +1,13 @@
+*.xml
+*.pyc
+output/*.csv
+output/*.pdf
+*.dat
+*.arff
+.DS_store/*
+.vscode/tags*
+.idea/*
+*.aux
+*.log
+*.gz
+

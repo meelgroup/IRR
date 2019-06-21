@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage{amsmath}
+\begin{document}
+	\begin{table*}[h]		
+		\setlength{\tabcolsep}{3pt}
+		\scriptsize 
+		\begin{center}
+			\begin{tabular}{|l | r | r |r |r| r |r |r |r| r|r|}
+				\hline	
+				{{Dataset}} & Size & Features & LR & NN & SVC & RF & RIPPER  &  {IMLI}  & {IRR}& inc-{IRR} \\	
+				\hline
+				\multirow{2}{*}{ Parkinsons}   & $  195 $  & $  51 $  & $   94.44  $    & $   94.87  $    & $   95.0  $    & $   92.5  $    & $   90.0  $    & $   94.72  $    & $   94.87  $    & $   94.72  $   \\ & & 
+				& $  ( 2.0 \text{s} ) $    & $  ( 1.94 \text{s} ) $    & $  ( 1.88 \text{s} ) $    & $  ( 4.93 \text{s} ) $    & $  ( 5.28 \text{s} ) $    & $  ( 3.09 \text{s} ) $    & $  ( 104.2 \text{s} ) $    & $  ( 4.66 \text{s} ) $   \\ \hline
+				\multirow{2}{*}{ Heart}   & $  303 $  & $  31 $  & $   86.21  $    & $   83.6  $    & $   85.48  $    & $   83.87  $    & $   81.59  $    & $   80.65  $    & $   86.65  $    & $   86.44  $   \\ & & 
+				& $  ( 1.74 \text{s} ) $    & $  ( 1.5 \text{s} ) $    & $  ( 1.52 \text{s} ) $    & $  ( 4.53 \text{s} ) $    & $  ( 4.72 \text{s} ) $    & $  ( 2.95 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  (  2000 \text{s}  ) $    \\ \hline
+				\multirow{2}{*}{ Ionosphere}   & $  351 $  & $  144 $  & $   95.63  $    & $   92.98  $    & $   92.73  $    & $   94.28  $    & $   92.81  $    & $   91.3  $    & $   95.59  $    & $   91.67  $   \\ & & 
+				& $  ( 3.21 \text{s} ) $    & $  ( 1.64 \text{s} ) $    & $  ( 1.6 \text{s} ) $    & $  ( 4.62 \text{s} ) $    & $  ( 5.22 \text{s} ) $    & $  ( 14.94 \text{s} ) $    & $  ( 1773.17 \text{s} ) $    & $  ( 2.08 \text{s} ) $   \\ \hline
+				\multirow{2}{*}{ WDBC}   & $  569 $  & $  88 $  & $   96.52  $    & $   96.49  $    & $   98.23  $    & $   96.49  $    & $   96.49  $    & $   96.46  $    & $   97.34  $    & $   96.49  $   \\ & & 
+				& $  ( 3.2 \text{s} ) $    & $  ( 1.64 \text{s} ) $    & $  ( 1.56 \text{s} ) $    & $  ( 4.89 \text{s} ) $    & $  ( 5.05 \text{s} ) $    & $  ( 2.58 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  ( 10.96 \text{s} ) $   \\ \hline
+				\multirow{2}{*}{ ILPD}   & $  583 $  & $  14 $  & $   71.19  $    & $   71.56  $    & $   71.19  $    & $   71.19  $    & $   72.41  $    & $   71.31  $    & $   69.57  $    & $   74.14  $   \\ & & 
+				& $  ( 1.74 \text{s} ) $    & $  ( 1.55 \text{s} ) $    & $  ( 1.54 \text{s} ) $    & $  ( 4.46 \text{s} ) $    & $  ( 4.79 \text{s} ) $    & $  ( 7.54 \text{s} ) $    & $  ( 5.44 \text{s} ) $    & $  ( 2.69 \text{s} ) $   \\ \hline
+				\multirow{2}{*}{ Pima}   & $  768 $  & $  30 $  & $   79.74  $    & $   79.22  $    & $   77.13  $    & $   78.57  $    & $   77.27  $    & $   74.51  $    & $   78.57  $    & $   77.27  $   \\ & & 
+				& $  ( 2.54 \text{s} ) $    & $  ( 1.64 \text{s} ) $    & $  ( 1.63 \text{s} ) $    & $  ( 4.71 \text{s} ) $    & $  ( 4.92 \text{s} ) $    & $  ( 20.95 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  (  2000 \text{s}  ) $    \\ \hline
+				\multirow{2}{*}{ Tic Tac Toe}   & $  958 $  & $  27 $  & $   98.44  $    & $   87.5  $    & $   98.44  $    & $   99.47  $    & $   98.44  $    & $   82.72  $    & $   84.37  $    & $   84.46  $   \\ & & 
+				& $  ( 2.71 \text{s} ) $    & $  ( 1.6 \text{s} ) $    & $  ( 1.64 \text{s} ) $    & $  ( 5.28 \text{s} ) $    & $  ( 5.1 \text{s} ) $    & $  ( 459.93 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  (  2000 \text{s}  ) $    \\ \hline
+				\multirow{2}{*}{ Titanic}   & $  1309 $  & $  26 $  & $   79.31  $    & $   77.1  $    & $   78.54  $    & $   79.01  $    & $   78.63  $    & $   79.01  $    & $   81.22  $    & $   78.63  $   \\ & & 
+				& $  ( 3.1 \text{s} ) $    & $  ( 1.68 \text{s} ) $    & $  ( 1.69 \text{s} ) $    & $  ( 5.16 \text{s} ) $    & $  ( 5.06 \text{s} ) $    & $  ( 3.86 \text{s} ) $    & $  ( 1669.87 \text{s} ) $    & $  ( 197.94 \text{s} ) $   \\ \hline
+				\multirow{2}{*}{ Compas}   & $  7210 $  & $  19 $  & $   67.75  $    & $   66.71  $    & $   66.02  $    & $   67.27  $    & $   67.34  $    & $   66.37  $    & $   67.89  $    & $   65.81  $   \\ & & 
+				& $  ( 3.92 \text{s} ) $    & $  ( 8.09 \text{s} ) $    & $  ( 9.31 \text{s} ) $    & $  ( 20.86 \text{s} ) $    & $  ( 6.18 \text{s} ) $    & $  ( 5.07 \text{s} ) $    & $  ( 162.13 \text{s} ) $    & $  ( 3.2 \text{s} ) $   \\ \hline
+				\multirow{2}{*}{ Tom's HW}   & $  28179 $  & $  910 $  & $   97.55  $    &         & $   97.6  $    & $   97.46  $    & $   97.6  $    & $   96.01  $    & $   97.34  $    & $   96.52  $   \\ & & 
+				& $  ( 6.0 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  ( 369.76 \text{s} ) $    & $  ( 82.44 \text{s} ) $    & $  ( 38.99 \text{s} ) $    & $  ( 85.04 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  ( 1956.6 \text{s} ) $   \\ \hline
+				\multirow{2}{*}{ Credit}   & $  30000 $  & $  110 $  & $   82.33  $    & $   80.69  $    & $   82.17  $    & $   82.12  $    & $   82.13  $    & $   81.75  $    & $   82.15  $    & $   81.94  $   \\ & & 
+				& $  ( 7.76 \text{s} ) $    & $  ( 315.02 \text{s} ) $    & $  ( 386.28 \text{s} ) $    & $  ( 45.87 \text{s} ) $    & $  ( 16.61 \text{s} ) $    & $  ( 26.58 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  ( 27.7 \text{s} ) $   \\ \hline
+				\multirow{2}{*}{ Adult}   & $  32561 $  & $  144 $  & $   87.19  $    & $   84.72  $    & $   87.19  $    & $   86.98  $    & $   84.89  $    & $   83.63  $    & $   85.23  $    & $   83.14  $   \\ & & 
+				& $  ( 7.07 \text{s} ) $    & $  ( 505.48 \text{s} ) $    & $  ( 511.57 \text{s} ) $    & $  ( 47.18 \text{s} ) $    & $  ( 52.38 \text{s} ) $    & $  ( 1999.41 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  ( 1959.2 \text{s} ) $   \\ \hline
+				\multirow{2}{*}{ Twitter}   & $  49999 $  & $  1511 $  & $   96.37  $    &         &         & $   96.48  $    & $   96.14  $    & $   94.57  $    & $   95.44  $    & $   93.22  $   \\ & & 
+				& $  ( 10.28 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  (  2000 \text{s}  ) $     & $  ( 378.6 \text{s} ) $    & $  ( 162.02 \text{s} ) $    & $  ( 241.63 \text{s} ) $    & $  (  2000 \text{s}  ) $     & $  ( 1216.86 \text{s} ) $   \\ \hline
+			\end{tabular}
+		\end{center}
+		\caption{Comparisons of test accuracy and training time for ten fold cross-validation for different classifiers. Every cell in the last eight columns contain the best test accuracy ($ \% $) and corresponding train time in seconds (within  parentheses).}
+	\end{table*}
+	\begin{table*}[h]		
+		\begin{center}
+			\begin{tabular}{|l |  r |r |r | }
+				\hline
+				{Dataset}  & RIPPER  &  {IMLI}  &  inc-{IRR}\\\hline		
+				\multirow{1}{*}{ Parkinsons}   & $   10.5  $    & $   7.5  $    & $   5.0  $   \\ \hline
+				\multirow{1}{*}{ Heart}   & $   7.0  $    & $   14.0  $    & $   19.5  $   \\ \hline
+				\multirow{1}{*}{ Ionosphere}   & $   11.0  $    & $   8.5  $    & $   6.0  $   \\ \hline
+				\multirow{1}{*}{ WDBC}   & $   7.0  $    & $   11.0  $    & $   10.0  $   \\ \hline
+				\multirow{1}{*}{ ILPD}   & $   5.0  $    & $   5.0  $    & $   2.0  $   \\ \hline
+				\multirow{1}{*}{ Pima}   & $   8.0  $    & $   15.0  $    & $   21.5  $   \\ \hline
+				\multirow{1}{*}{ Tic Tac Toe}   & $   25.0  $    & $   11.5  $    & $   12.0  $   \\ \hline
+				\multirow{1}{*}{ Titanic}   & $   5.0  $    & $   7.0  $    & $   12.5  $   \\ \hline
+				\multirow{1}{*}{ Compas}   & $   12.5  $    & $   4.0  $    & $   3.0  $   \\ \hline
+				\multirow{1}{*}{ Tom's HW}   & $   16.5  $    & $   32.0  $    & $   5.5  $   \\ \hline
+				\multirow{1}{*}{ Credit}   & $   33.0  $    & $   9.0  $    & $   3.0  $   \\ \hline
+				\multirow{1}{*}{ Adult}   & $   106.0  $    & $   35.5  $    & $   13.0  $   \\ \hline
+				\multirow{1}{*}{ Twitter}   & $   56.0  $    & $   67.5  $    & $   7.0  $   \\ \hline
+			\end{tabular}
+		\end{center}
+		\caption{Size of the rules generated by  interpretable classifiers.}	
+	\end{table*}
+\end{document}
